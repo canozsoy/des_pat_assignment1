@@ -1,7 +1,12 @@
 package com.creational_design_patterns;
 
+
 public class FactoryGenerator {
     private static FactoryGenerator singleton;
+
+    private FactoryGenerator() {
+        // Make constructor not available outside
+    }
 
     public static FactoryGenerator getFactoryGenerator() {
         if (singleton != null) {
